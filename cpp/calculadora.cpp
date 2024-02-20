@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 #include <locale>
 
 using namespace std;
@@ -22,29 +23,31 @@ int main(){
     cout << "Digite um segundo valor: " << endl;
     cin >> n2;
 
-    cout << "Você deseja operar como? 0 - Divisão, 1 - Multiplicação,2 - Soma, 3 - Subtrair" << endl;
+    cout << "Vocï¿½ deseja operar como? 0 - Divisï¿½o, 1 - Multiplicaï¿½ï¿½o,2 - Soma, 3 - Subtrair" << endl;
     cin >> o;
     
     switch (o){
          case 0:
             resultado = n1 / n2;
-            cout << "O resultado da divisão é: "<< resultado;
+            cout << "O resultado da divisï¿½o ï¿½: "<< resultado;
             break;
          case 1:
             resultado = n1 * n2;
-            cout << "O resultado da multiplicação é: " << resultado;
+            cout << "O resultado da multiplicaï¿½ï¿½o ï¿½: " << resultado;
             break;
          case 2:
             resultado = n1 + n2;
-            cout << "O resultado da soma é: "<< resultado;
+            cout << "O resultado da soma ï¿½: "<< resultado;
             break;
          case 3:
             resultado = n1 - n2;
-            cout << "O resultado da subtração é: " << resultado;
+            cout << "O resultado da subtraï¿½ï¿½o ï¿½: " << resultado;
             break;   
          default:
              cout << "Valor indeterminado" << endl;
              break;
     }     
+
+   system("pause");
 
 }
